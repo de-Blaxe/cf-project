@@ -53,7 +53,7 @@ class ElementHandler {
 		} else if (element.tagName == 'h1' && element.getAttribute('id') == 'title') {
 			element.setInnerContent(this.index == 1 ? 'Heads!' : "Tails!");
 		} else if (element.tagName == 'p' && element.getAttribute('id') == 'description') {
-			element.setInnerContent(this.isNew ? `Thanks for taking a look at my project! Have a cookie!` : `Fun fact: a universe might have diverged from the moment you flipped the coin... you should do it again!`);
+			element.setInnerContent(this.isNew ? `Thanks for taking a look at my project! Have a cookie!` : `Fun fact: an alternate universe might have diverged from the moment you flipped the coin... you should do it again!`);
 		} else if (element.tagName == 'a' && element.getAttribute('id') == 'url') {
 			// Set cookie to signal generation of a new value. New flip wont be generated on refresh.
 			element.setInnerContent('Click here to flip again');
